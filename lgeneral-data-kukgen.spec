@@ -1,13 +1,13 @@
 Summary:	Free content package for LGeneral based on k.u.k General
 Summary(pl.UTF-8):	Wolnodostępny pakiet danych dla gry LGeneral oparty na k.u.k General
 Name:		lgeneral-data-kukgen
-Version:	1.1
+Version:	1.1.1
 Release:	1
 License:	CC-BY-SA v3.0
 Group:		Applications/Games
-Source0:	http://downloads.sourceforge.net/lgeneral/kukgen-data-%{version}.tar.gz
-# Source0-md5:	5a9755bdb2ae0a94910c093c5feafd61
-URL:		http://lgames.sourceforge.net/LGeneral
+Source0:	https://downloads.sourceforge.net/lgeneral/kukgen-data-%{version}.zip
+# Source0-md5:	600158b00d39d227675fe9f88b372476
+URL:		https://lgames.sourceforge.net/LGeneral
 Requires:	lgeneral >= 1.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -22,7 +22,7 @@ Ten pakiet zawiera wolnodostępne pliki z danymi dla gry LGeneral
 oparte na k.u.k General autorstwa Steve'a McGuby.
 
 %prep
-%setup -q -n lgeneral-data-1.1-d4d831b06c39a4d20dd0a96d0a89e3d50f22e69a
+%setup -q -n kukgen-data-%{version}
 
 %install
 rm -rf $RPM_BUILD_ROOT
